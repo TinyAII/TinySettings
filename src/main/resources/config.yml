@@ -1,0 +1,59 @@
+# ============================================
+#  TinySettings 一键设置插件配置
+#  作者: TinyAII · MIT License
+#  命令: /设置 (别名 /settings /一键)
+# ============================================
+
+# 玩法设置
+gameplay:
+  keep-inventory: true        # 死亡不掉落（老板拍板：默认开）
+  keep-exp: false             # 死亡不掉经验
+  keep-armor: false           # 死亡保留装备（不掉落盔甲）
+  death-protect: false        # 死亡掉落保护（掉落物限时保护）
+  death-protect-seconds: 300  # 掉落保护时长（秒）
+
+# 战斗设置
+combat:
+  pvp: true                   # PVP（玩家互伤）
+  mob-attack: true            # 怪物攻击玩家
+  fall-damage: true           # 摔落伤害
+  fire-damage: true           # 火焰/岩浆伤害
+
+# 破坏防护
+protection:
+  tnt: false                  # TNT 破坏地形
+  creeper: false              # 苦力怕破坏地形
+  fire-spread: false          # 火焰蔓延烧毁
+  enderman: false             # 末影人搬方块
+
+# 世界环境
+world:
+  difficulty: NORMAL          # 难度: PEACEFUL / EASY / NORMAL / HARD
+  mob-spawning: true          # 怪物生成
+  animal-spawning: true       # 动物生成
+  time: NORMAL                # 时间: DAY(永昼) / NIGHT(永夜) / NORMAL(正常)
+  weather: NORMAL             # 天气: CLEAR(晴) / RAIN(雨) / THUNDER(雷雨) / NORMAL(正常)
+  weather-lock: false         # 天气锁定
+
+# 出生点保护（老板要求新增）
+spawn-protection:
+  enabled: true               # 是否启用出生点保护
+  radius: 16                  # 保护半径（格）
+  protect-pvp: true           # 保护范围内禁止PVP
+  protect-build: true         # 保护范围内禁止破坏/放置（非OP）
+  protect-mob: true           # 保护范围内禁止怪物攻击
+
+# 消息
+messages:
+  prefix: "&7[&e设置&7] &r"
+  no-permission: "&c你没有权限这么做。"
+  on: "&a已开启"
+  off: "&c已关闭"
+  changed: "&a设置已更改：&e{setting} -> {value}"
+  status-header: "&6======== &e当前服务器设置 &6========"
+  status-line: "&e{setting}&7: {value}"
+  player-only: "&c该命令只能由玩家执行。"
+  invalid-arg: "&c参数无效：&e{arg}"
+  reloaded: "&a配置已重载。"
+  reset: "&a已重置为默认设置。"
+  spawn-protected: "&c出生点保护区域，你不能在此操作。"
