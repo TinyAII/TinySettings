@@ -1,0 +1,26 @@
+name: TinySettings
+version: 1.0.0
+main: nl.tinyaii.tinysettings.TinySettingsPlugin
+api-version: 1.16
+author: TinyAII
+description: 一键设置插件 - 死亡不掉落/难度/PVP/防爆/天气/时间/出生点保护，GUI+命令全搞定
+website: https://github.com/TinyAII
+
+commands:
+  settings:
+    description: 一键设置
+    usage: /设置 [子命令]
+    aliases: [设置, 一键, ss]
+    permission: tinysettings.admin
+  settings-status:
+    description: 查看设置状态
+    usage: /设置 状态
+    aliases: [设置状态, ss-status]
+
+permissions:
+  tinysettings.admin:
+    description: 管理所有设置
+    default: op
+  tinysettings.query:
+    description: 查看设置状态
+    default: true
